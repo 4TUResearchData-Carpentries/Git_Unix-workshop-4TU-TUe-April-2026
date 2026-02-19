@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Unix shell and Version Control with Git",
+  "description": "This course provides an introductory look into unix shell and version control systems and the basics of Git software.",
+  "keywords": "unix shell, version control, Git, collaboration, open science, reproducibility",
+  "learningResourceType": "workshop",
+  "educationalLevel": "beginner",
+  "provider": {
+    "@type": "Organization",
+    "name": "4TU.ResearchData",
+    "sameAs": "https://data.4tu.nl"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "startDate": "2026-04-22",
+    "endDate": "2026-04-23",
+    "url": "https://taxila.nl/events/introduction-to-version-control-with-git-274a8a45-62db-4769-94d7-7cf8b1a8bc97",
+    "instructor": {
+      "@type": "Person",
+      "name": "Dr. Leila Iñigo de la Cruz",
+      "url": "https://data.4tu.nl/info/about-4turesearchdata/contact"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "EUR",
+      "description": "Free of charge for 4TU member institutions"
+    }
+  }
+}
