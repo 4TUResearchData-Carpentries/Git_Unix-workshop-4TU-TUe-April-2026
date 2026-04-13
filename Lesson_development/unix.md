@@ -1,6 +1,19 @@
 
 # Unix lesson
 
+## Intro message
+
+The Unix shell is older than most of the people who use it. It has
+survived so long because it is one of the most productive programming
+environments ever created --- maybe even *the* most productive. Its syntax
+may be cryptic, but people who have mastered it can experiment with
+different commands interactively, then use what they have learned to
+automate their work. Graphical user interfaces may be easier to use at
+first, but once learned, the productivity in the shell is unbeatable.
+And as Alfred North Whitehead wrote in 1911, 'Civilization advances by
+extending the number of important operations which we can perform
+without thinking about them.'
+
 ## 09:30–09:40 (10 min) — Introducing the Shell
 
 **Goals:** what the shell is, prompt, first `ls`.
@@ -135,8 +148,7 @@ use the following series of commands to get there:
 ```bash
 $ cd Desktop
 $ cd shell-lesson-data
-$ cd exercise-datals
-
+$ cd exercise-data
 ```
 
 - We now know how to go down the directory tree (i.e. how to go into a subdirectory),
@@ -394,41 +406,6 @@ $ rm quotes.txt
 $ rm -r thesis_backup/
 ```
 
-
-## Exercise : Moving Files to a new folder (https://swcarpentry.github.io/shell-novice/03-create.html#moving-files-and-directories)
-
-After running the following commands,
-Jamie realizes that she put the files `sucrose.dat` and `maltose.dat` into the wrong folder.
-The files should have been placed in the `raw` folder.
-
-```bash
-$ ls -F
- analyzed/ raw/
-$ ls -F analyzed
-fructose.dat glucose.dat maltose.dat sucrose.dat
-$ cd analyzed
-```
-
-Fill in the blanks to move these files to the `raw/` folder
-(i.e. the one she forgot to put them in)
-
-```bash
-$ mv sucrose.dat maltose.dat ____/____
-```
-
-:::::::::::::::  solution
-
-## Solution
-
-```bash
-$ mv sucrose.dat maltose.dat ../raw
-```
-
-Recall that `..` refers to the parent directory (i.e. one above the current directory)
-and that `.` refers to the current directory.
-
-
----------------------------------
 ## Wildcards
 
 `*` is a **wildcard**, which represents zero or more other characters.
@@ -753,13 +730,12 @@ Let's look at the files:
 $ head -n 5 basilisk.dat minotaur.dat unicorn.dat
 ```
 
-**Problem: We would like to print out the classification for each species, which is given on the second
-line of each file.**
+Problem: We would like to print out the classification for each species, which is given on the second
+line of each file.
 
 Solution: For each file, we would need to execute the command `head -n 2` and pipe this to `tail -n 1`.
 We'll use a loop to solve this problem, but first let's look at the general form of a loop,
 using the code below:
-
 
 ```bash
 $ for filename in basilisk.dat minotaur.dat unicorn.dat
@@ -855,7 +831,7 @@ Inside a shell script,
 `$1` means 'the first filename (or other argument) on the command line'.
 We can now run our script like this:
 
-```bashna
+```bash
 $ bash middle.sh octane.pdb
 ```
 
@@ -930,27 +906,6 @@ wc -l "$@" | sort -n
 ```bash
 $ bash sorted.sh *.pdb ../creatures/*.dat
 ```
-
-
-## Showcase some other shell built-in variables 
-
-- we can make a script called `variables.sh` with the content:
-```bash
-
-echo "Name of the script: $0"
-echo "Total number of arguments: $#"
-echo "Value of the first argument: $1"
-echo "Value of the second argument: $2"
-echo "Values of all the arguments: $@"
-```
-
-then execute the script like this:
-
-```bash
-bash ./variables.sh Apple Banana Orange
-```
-
-
 ## Nelle's Pipeline: Creating a Script
 
 Nelle's supervisor insisted that all her analytics must be reproducible.
@@ -1106,7 +1061,7 @@ directory tree shown below.
 
 cd shell-lesson-data/exercise-data
 
-ls -R . 
+ls -r . 
 
 ```
 
@@ -1156,14 +1111,16 @@ $ find . -name *.txt
 
 
 
-### Exercise: Matching and Subtracting (https://swcarpentry.github.io/shell-novice/07-find.html)
+---- exercise
 
-The -v option to grep inverts pattern matching, so that only lines which do not match the pattern are printed. Given that, which of the following commands will find all .dat files in creatures except unicorn.dat? Once you have thought about your answer, you can test the commands in the shell-lesson-data/exercise-data directory.
+How can we combine that with `wc -l` to count the lines in all those files?
 
-1. `find creatures -name "*.dat" | grep -v unicorn`
-2. `find creatures -name *.dat | grep -v unicorn`
-3. `grep -v "unicorn" $(find creatures -name "*.dat")`
-4. `None of the above.`
+The simplest way is to put the `find` command inside `$()`:
+
+```bash
+$ wc -l $(find . -name "*.txt")
+```
+
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
