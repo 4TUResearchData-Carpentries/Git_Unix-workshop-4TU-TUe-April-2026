@@ -15,12 +15,19 @@
     "@type": "CourseInstance",
     "startDate": "2026-04-22",
     "endDate": "2026-04-23",
-    "url": "https://taxila.nl/events/introduction-to-version-control-with-git-274a8a45-62db-4769-94d7-7cf8b1a8bc97",
-    "instructor": {
+    "url": "https://4turesearchdata-carpentries.github.io/2026-04-22-tudelft/",
+    "instructor": [
+      {
+        "@type": "Person",
+        "name": "Dr. Leila Iñigo de la Cruz",
+        "url": "https://data.4tu.nl/info/about-4turesearchdata/contact"
+      },
+      {
       "@type": "Person",
-      "name": "Dr. Leila Iñigo de la Cruz",
-      "url": "https://data.4tu.nl/info/about-4turesearchdata/contact"
-    },
+      "name": "John Bons",
+      "url": "https://about.me/JohnBons"
+    }
+  ],
     "offers": {
       "@type": "Offer",
       "price": "0.00",
