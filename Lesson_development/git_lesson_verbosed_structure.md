@@ -352,7 +352,7 @@ git log --oneline
 git restore -s <commit-id> calculate_mean.py
 ```
 
-Restore latest version:
+Restore the file to the state of the last commit:
 
 ```bash
 git restore calculate_mean.py
