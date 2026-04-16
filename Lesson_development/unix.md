@@ -761,7 +761,7 @@ $ history | tail -n 5
 - Every `for` loop needs a variable to refer to the thing it is currently operating on.
 - Use `$name` to expand a variable (i.e., get its value). `${name}` can also be used.
 - Give files consistent names that are easy to match with wildcard patterns to make it easy to select them for looping.
-- Use `history` to display recent commands, and `![number]` to repeat a command by number.
+- Use `history` to display recent commands, and `!number` to repeat a command by number.
 
 ---
 
@@ -906,7 +906,7 @@ wc -l "$@" | sort -n
 ```bash
 $ bash sorted.sh *.pdb ../creatures/*.dat
 ```
-## Nelle's Pipeline: Creating a Script
+## Nelle's Pipeline: Creating a Script (optional)
 
 Nelle's supervisor insisted that all her analytics must be reproducible.
 The easiest way to capture all the steps is in a script.
