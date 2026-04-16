@@ -30,9 +30,9 @@ export PS1='$ '
 
 ### 🧊 Introduction \[10 min]
 
-* Start with [CodeiMD collaborative notes](https://edu.nl/htaw9) and icebreaker.
-* Transition to Git introduction with [slides](Lesson_development/Presentations/Git-intro-lesson.pptx).
-* Use [Mentimeter poll](https://edu.nl/cma84) in [presenter mode](https://www.mentimeter.com/app/folder/2064636) .
+* Start with [HackMD collaborative notes](https://edu.nl/xhydh) and icebreaker.
+* Transition to Git introduction with [slides](https://zenodo.org/records/19603828).
+* Use [Mentimeter poll](https://www.menti.com/alx2mugaqr1n) in  presenter mode .
 
 ### 🔧 Step 1: Setting Up Git \[6 min]
 
