@@ -26,11 +26,11 @@ When the shell is first opened, you are presented with a **prompt**,
 indicating that the shell is waiting for input.
 
 ```bash
-$
+$ # Shell prompt: system is ready to receive commands
 ```
 
 ```bash
-$ ls
+$ ls # List files in current directory → first inspection step in any workflow
 ```
 
 **Exercises (rapid picks):**
@@ -41,7 +41,7 @@ If the shell can't find a program whose name is the command you typed, it
 will print an error message such as:
 
 ```bash
-$ ks
+$ ks # Attempt to run a command → demonstrates commands must exist and be spelled correctly
 ```
 
 ```output
@@ -79,7 +79,7 @@ is not installed.
 `pwd` shows you where you are, and usually whwre the terminal starts is called the home directory:
 
 ```bash
-$ pwd
+$ pwd # Print Working Directory → always know where your analysis is running
 ```
 
 Two main concepts of the Unix shell:
@@ -111,11 +111,11 @@ Now let's learn the command that will let us see the contents of our
 own filesystem.  We can see what's in our home directory by running `ls`:
 
 ```bash
-$ ls
+$ ls # Inspect current directory contents
 ```
 
 ```bash
-$ ls -F
+$ ls -F # Adds markers to distinguish file types → helps understand structure
 ```
 
     - a trailing `/` indicates that this is a directory
@@ -126,11 +126,11 @@ $ ls -F
 to use a command and what options it accepts 
 
 ```bash
-  $ ls --help
+  $ ls --help # Built-in documentation → essential for self-learning
 ```
 - Examples
 ```bash
-$ ls -l -h   # long listing format and human readable
+$ ls -l -h   # Detailed listing + human-readable sizes → useful for dataset inspection
 ```
 
 - Exploring other directories
@@ -163,7 +163,7 @@ $ cd .. # `..` is a special directory name meaning "the directory containing thi
 - How to find the parent directory shortcut
 
 ```bash
-$ ls -F -a
+$ ls -F -a # Show hidden files and structure
 ```
 
     - it also displays another special directory that's just called `.`,
@@ -175,7 +175,7 @@ if you type `cd` on its own, without giving
 a directory?
 
 ```bash
-$ cd  # home directory
+$ cd  # Return to home directory → safe reset point
 ```
 
 ## Two More Shortcuts
@@ -199,19 +199,19 @@ Try it!
 First navigate to `~/Desktop/shell-lesson-data` (you should already be there).
 
 ```bash
-$ cd ~/Desktop/shell-lesson-data
+$ cd ~/Desktop/shell-lesson-data # Use ~ as home shortcut → portable paths
 ```
 
 Then `cd` into the `exercise-data/creatures` directory
 
 ```bash
-$ cd exercise-data/creatures
+$ cd exercise-data/creatures # Navigate using relative path
 ```
 
 Now if you run
 
 ```bash
-$ cd -
+$ cd -  # Return to previous directory → efficient navigation
 ```
 
 you'll see you're back in `~/Desktop/shell-lesson-data`.
@@ -261,7 +261,7 @@ We should still be in the `shell-lesson-data` directory on the Desktop,
 which we can check using:
 
 ```bash
-$ pwd
+$ pwd  # Confirm location before modifying files
 ```
 
 
@@ -270,6 +270,7 @@ Next we'll move to the `exercise-data/writing` directory and see what it contain
 ```bash
 $ cd exercise-data/writing/
 $ ls -F
+# Enter directory and inspect contents
 ```
 
 ```output
@@ -282,7 +283,7 @@ Let's create a new directory called `thesis` using the command `mkdir thesis`
 (which has no output):
 
 ```bash
-$ mkdir thesis
+$ mkdir thesis # Create directory → organizing outputs
 ```
 
 ## Good names for files and directories
@@ -313,7 +314,7 @@ then run a text editor called Nano to create a file called `draft.txt`:
 
 ```bash
 $ cd thesis
-$ nano draft.txt
+$ nano draft.txt  # Create/edit text file → scripts and data are text
 ```
 
 write in nano: "It's not publish or perish any more, it's share and thrive :)"
@@ -325,12 +326,12 @@ We have seen how to create text files using the `nano` editor.
 Now, try the following command:
 
 ```bash
-$ touch my_file.txt
+$ touch my_file.txt # Create empty file
 ```
 ## Removing a file 
 
 ```bash
-$ rm my_file.txt
+$ rm my_file.txt # Remove file → irreversible, be cautious
 ```
 ## Moving files and directories
 
@@ -346,7 +347,7 @@ so let's change the file's name using `mv`,
 which is short for 'move':
 
 ```bash
-$ mv thesis/draft.txt thesis/quotes.txt
+$ mv thesis/draft.txt thesis/quotes.txt  # Rename file (move within same directory)
 ```
 
 Let's move `quotes.txt` into the current working directory.
@@ -359,13 +360,13 @@ In this case,
 the directory name we use is the special directory name `.` that we mentioned earlier.
 
 ```bash
-$ mv thesis/quotes.txt .
+$ mv thesis/quotes.txt . # Move file into current directory
 ```
 
 test by :
 
 ```bash
-$ ls thesis
+$ ls thesis # Verify directory contents
 ```
 
 ```output
@@ -375,7 +376,7 @@ $
 ## Copying files and directories
 
 ```bash
-$ cp quotes.txt thesis/quotations.txt
+$ cp quotes.txt thesis/quotations.txt # Copy file → safe experimentation
 $ ls quotes.txt thesis/quotations.txt
 ```
 We can also copy a directory and all its contents by using the
@@ -383,7 +384,7 @@ We can also copy a directory and all its contents by using the
 e.g. to back up a directory:
 
 ```bash
-$ cp -r thesis thesis_backup
+$ cp -r thesis thesis_backup # Recursive copy → backup directory
 ```
 
 test:
@@ -399,11 +400,11 @@ let's tidy up this directory by removing the `quotes.txt` file we created.
 The Unix command we'll use for this is `rm` (short for 'remove'):
 
 ```bash
-$ rm quotes.txt
+$ rm quotes.txt # Delete file
 ```
 
 ```bash
-$ rm -r thesis_backup/
+$ rm -r thesis_backup/ # Delete directory recursively
 ```
 
 ## Wildcards
@@ -413,7 +414,7 @@ Let's consider the `shell-lesson-data/exercise-data/alkanes` directory:
 
 ```bash
 
-ls *.pdb # every file that ends with '.pdb'
+ls *.pdb # Match all files ending in .pdb → batch processing
 
 ```
 
@@ -423,7 +424,7 @@ represent filenames that begin with the letter 'p'.
 
 ```bash
 
-ls p*.pdb # every file that begin with p and end in .pdb 
+ls p*.pdb # every file that begin with p and end in .pdb  
 
 ```
 
@@ -431,13 +432,13 @@ ls p*.pdb # every file that begin with p and end in .pdb
 
 ```bash
 
-ls ?ethane.pdb # only represent `methane.pdb`
+ls ?ethane.pdb # Exactly one character before 'ethane', only represent `methane.pdb`
 
 ```
 
 ```bash
 
-ls *ethane.pdb # represents both `ethane.pdb` and `methane.pdb`.
+ls *ethane.pdb # # Any prefix ending in 'ethane' , represents both `ethane.pdb` and `methane.pdb`.
 
 ```
 
@@ -525,7 +526,7 @@ ethane.pdb    octane.pdb     propane.pdb
 Let's run an example command:
 
 ```bash
-$ wc cubane.pdb
+$ wc cubane.pdb # Count lines, words, characters → basic data summary
 ```
 
 ```output
@@ -540,14 +541,14 @@ If we run the command `wc *.pdb`, the `*` in `*.pdb` matches zero or more charac
 so the shell turns `*.pdb` into a list of all `.pdb` files in the current directory:
 
 ```bash
-$ wc *.pdb
+$ wc *.pdb # Count lines, words, characters in multiple files → dataset size comparison
 ```
 
 If we run `wc -l` instead of just `wc`,
 the output shows only the number of lines per file:
 
 ```bash
-$ wc -l *.pdb
+$ wc -l *.pdb # Count lines in multiple files → dataset size comparison
 ```
 The `-m` and `-w` options can also be used with the `wc` command to show
 only the number of characters or the number of words, respectively.
@@ -560,16 +561,17 @@ but what if there were 6000?
 Our first step toward a solution is to run the command:
 
 ```bash
-$ wc -l *.pdb > lengths.txt
+$ wc -l *.pdb > lengths.txt # Redirect output to file → reusable data
 ```
 ```bash
-$ cat lengths.txt
+$ cat lengths.txt # Display file contents
 ```
 ## Sorting and filtering output
 
 ```bash
-$ sort -n lengths.txt
-```wc
+$ sort -n lengths.txt # Sort numerically
+
+```
 
 ```bash
 $ sort -n lengths.txt > sorted-lengths.txt
@@ -581,7 +583,7 @@ In our example of finding the file with the fewest lines,
 we are using two intermediate files `lengths.txt` and `sorted-lengths.txt` to store output. but we dont need to do that, for that we have the pipe functionality of the unix shell. 
 
 ```bash
-$ wc -l *.pdb | sort -n |  head -n 1
+$ wc -l *.pdb | sort -n |  head -n 1 # Pipeline → combine tools without intermediate files
 ```
 
 The vertical bar, `|`, between the two commands is called a **pipe**.
@@ -738,7 +740,7 @@ We'll use a loop to solve this problem, but first let's look at the general form
 using the code below:
 
 ```bash
-$ for filename in basilisk.dat minotaur.dat unicorn.dat
+$ for filename in basilisk.dat minotaur.dat unicorn.dat  # Loop over files → automate repetitive tasks
 > do
 >     echo $filename
 >     head -n 2 $filename | tail -n 1
@@ -754,7 +756,7 @@ then to use `!123` (where '123' is replaced by the command number) to
 repeat one of those commands. For example, if Nelle types this:
 
 ```bash
-$ history | tail -n 5
+$ history | tail -n 5 # Show recent commands → reproducibility and debugging
 ```
 
 - A `for` loop repeats commands once for every thing in a list.
@@ -990,7 +992,7 @@ $ cat haiku.txt
 Let's find lines that contain the word 'not':
 
 ```bash
-$ grep not haiku.txt
+$ grep not haiku.txt # Search for pattern in file → text querying
 ```
 
 By default, grep searches for a pattern in a **case-sensitive way**.
