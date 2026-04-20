@@ -202,6 +202,8 @@ ls -R
 
 ### 🚫 Step 6: Ignoring Files \[6 min]
 
+> Instructor note explain why these ignoring files are nessesary and not to include into the repository
+
 Simulate a scenario with large/unwanted files:
 
 ```bash
@@ -290,6 +292,9 @@ git log > changelog.txt
 ### b. Understanding HEAD
 
 > HEAD is a reference to the most recent commit in the current branch (`main` or `master`).
+> As we saw in the previous episode, we can refer to commits by their identifiers. You can refer to the most recent commit of the working directory by using the identifier _HEAD_.
+>We’ve been adding small changes at a time to calculate_mean.py, so it’s easy to track our progress by looking, so let’s do that using our HEADs. Before we start, let’s make a change to calculate_mean.py, adding some lines.
+> Visualize with https://edu.nl/bvu6x 
 
 ### c. Add a Usage Example
 
