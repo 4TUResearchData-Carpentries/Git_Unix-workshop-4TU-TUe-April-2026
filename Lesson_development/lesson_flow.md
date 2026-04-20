@@ -9,9 +9,9 @@ Day One:
 
 - start the lesson for Unix 
 
-- until 12:30
+- until 12:30 (lunch will be there)
 
-- Presentation git-intro lessons theory
+- 13:00 Presentation git-intro lessons theory
 - Give the git cheat sheets to the participants
 - start Local repositories lessons (Lesson_development/git_lesson_verbosed_structure)
 - +/- 14:45–15:00 break
