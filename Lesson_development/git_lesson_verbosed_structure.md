@@ -203,7 +203,7 @@ ls -R
 
 ### 🚫 Step 6: Ignoring Files \[6 min]
 
-> Instructor note explain why these ignoring files are nessesary and not to include into the repository
+> Instructor note explain why these ignoring files are necessary and not to include into the repository
 
 Simulate a scenario with large/unwanted files:
 
@@ -330,7 +330,7 @@ git diff <commit-id> calculate_mean.py
 ```bash
 git show HEAD~2 calculate_mean.py
 ```
-
+>Explain that git show is used for viewing a commit(history and why something was written) and git diff to compare files.
 ---
 
 ## ⏪ Reverting Changes \[9 min]
