@@ -23,6 +23,7 @@ For Windows/WSL setup:
 cd /mnt/c/Users/<your-username>/OneDrive - Delft University of Technology/
 export PS1='$ '
 ```
+For mirror a window using ([Ontopreplica](https://github.com/LorenzCK/OnTopReplica))
 
 ---
 
