@@ -13,6 +13,7 @@ Day One:
 
 - 13:00 Presentation git-intro lessons theory
 - Give the git cheat sheets to the participants
+- prep screen output windows (Replica & tail)
 - start Local repositories lessons (Lesson_development/git_lesson_verbosed_structure)
 - +/- 14:45–15:00 break
 - Start 15:00–16:30 Tracking Changes & Commit History (Lesson_development/git_lesson_verbosed_structure)
