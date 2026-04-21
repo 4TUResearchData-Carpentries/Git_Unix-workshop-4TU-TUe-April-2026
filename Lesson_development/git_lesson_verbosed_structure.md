@@ -390,7 +390,7 @@ git commit -m "usage message added"
 
 ---
 
-### 🌐 8. Connecting to GitHub \[20 min]
+### 🌐 Connecting to GitHub \[20 min]
 
 #### a. Create a GitHub Repository
 
