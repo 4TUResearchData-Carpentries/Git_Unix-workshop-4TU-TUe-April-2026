@@ -29,6 +29,19 @@ For mirror a window using ([Ontopreplica](https://github.com/LorenzCK/OnTopRepli
 
 ## 📍 Part 1: Getting Started with Git
 
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Understand the benefits of an automated version control system.
+- Understand the basics of how automated version control systems work.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- What is version control and why should I use it?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ### 🧊 Introduction \[10 min]
 
 * Start with [HackMD collaborative notes](https://edu.nl/xhydh) and icebreaker.
