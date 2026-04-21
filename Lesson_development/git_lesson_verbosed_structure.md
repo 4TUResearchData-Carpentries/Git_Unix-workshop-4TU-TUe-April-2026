@@ -376,17 +376,15 @@ git commit -m "usage message added"
 
 ---
 
-✅ End of Morning Session
+✅ End of day one
 
-
-## Lunch 
-
-13:30 Afternoon session
 ----
 
-## 🛰️ Part 3: Working with Remotes and Collaborating on GitHub
+## 🛰️ Day 2: Working with Remotes and Collaborating on GitHub
 
-### 🧭 13:30 — Intro to Remotes
+### 🧭  — Recap of local Git
+### 🧭  — Intro to Remotes
+### 🧭  — Push/Pull
 
 > **Instructor Note:** Introduce the idea of remote repositories using slides. Explain what GitHub is, how it connects to local repositories, and why remotes are important for collaboration and backup.
 
@@ -494,13 +492,13 @@ git pull origin main
 
 ---
 
-## ☕ 14:30 – Break
+## ☕ 10:45 - 11:00 – Break
 
 Invite participants to join `workshop-check-in` repo as collaborators before resuming.
 
 ---
-
-## 🤝 Collaboration Practice: Hands-On Session
+11:00 - 12:00 
+## 🤝 Collaboration Practice: Hands-On Session issues? 
 
 ### a. Clone a Shared Repository
 
