@@ -23,10 +23,17 @@ For Windows/WSL setup:
 cd /mnt/c/Users/<your-username>/OneDrive - Delft University of Technology/
 export PS1='$ '
 ```
+For mirror a window using ([Ontopreplica](https://github.com/LorenzCK/OnTopReplica))
 
 ---
 
 ## 📍 Part 1: Getting Started with Git
+
+| Objectives                                                                 | Questions                                      |
+|---------------------------------------------------------------------------|-----------------------------------------------|
+| Understand the benefits of an automated version control system.           | What is version control and why should I use it? |
+| Understand the basics of how automated version control systems work.      |                                               |
+
 
 ### 🧊 Introduction \[10 min]
 
@@ -202,6 +209,8 @@ ls -R
 
 ### 🚫 Step 6: Ignoring Files \[6 min]
 
+> Instructor note explain why these ignoring files are necessary and not to include into the repository
+
 Simulate a scenario with large/unwanted files:
 
 ```bash
@@ -290,6 +299,9 @@ git log > changelog.txt
 ### b. Understanding HEAD
 
 > HEAD is a reference to the most recent commit in the current branch (`main` or `master`).
+> As we saw in the previous episode, we can refer to commits by their identifiers. You can refer to the most recent commit of the working directory by using the identifier _HEAD_.
+>We’ve been adding small changes at a time to calculate_mean.py, so it’s easy to track our progress by looking, so let’s do that using our HEADs. Before we start, let’s make a change to calculate_mean.py, adding some lines.
+> Visualize with https://edu.nl/bvu6x 
 
 ### c. Add a Usage Example
 
@@ -324,7 +336,7 @@ git diff <commit-id> calculate_mean.py
 ```bash
 git show HEAD~2 calculate_mean.py
 ```
-
+>Explain that git show is used for viewing a commit(history and why something was written) and git diff to compare files.
 ---
 
 ## ⏪ Reverting Changes \[9 min]
@@ -364,23 +376,21 @@ git commit -m "usage message added"
 
 ---
 
-✅ End of Morning Session
+✅ End of day one
 
-
-## Lunch 
-
-13:30 Afternoon session
 ----
 
-## 🛰️ Part 3: Working with Remotes and Collaborating on GitHub
+## 🛰️ Day 2: Working with Remotes and Collaborating on GitHub
 
-### 🧭 13:30 — Intro to Remotes
+### 🧭  — Recap of local Git
+### 🧭  — Intro to Remotes
+### 🧭  — Push/Pull
 
 > **Instructor Note:** Introduce the idea of remote repositories using slides. Explain what GitHub is, how it connects to local repositories, and why remotes are important for collaboration and backup.
 
 ---
 
-### 🌐 8. Connecting to GitHub \[20 min]
+### 🌐 Connecting to GitHub \[20 min]
 
 #### a. Create a GitHub Repository
 
@@ -482,13 +492,13 @@ git pull origin main
 
 ---
 
-## ☕ 14:30 – Break
+## ☕ 10:45 - 11:00 – Break
 
 Invite participants to join `workshop-check-in` repo as collaborators before resuming.
 
 ---
-
-## 🤝 Collaboration Practice: Hands-On Session
+11:00 - 12:00 
+## 🤝 Collaboration Practice: Hands-On Session issues? 
 
 ### a. Clone a Shared Repository
 

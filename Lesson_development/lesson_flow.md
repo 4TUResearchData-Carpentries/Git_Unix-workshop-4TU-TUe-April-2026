@@ -10,7 +10,8 @@ Day One:
 
 - start the lesson for Unix 
 
-- until 12:30
+- until 12:30 (lunch will be there)
+
 
 - Energyser! (show the last slide of the workshop-intro-day-1) (2 mins about Git)-> ask the audience to stand up.  We’ll use your hands to map experience, just follow along, no overthinking.
 
@@ -52,5 +53,13 @@ Say, we hope the lesson of today help you to know and use Git more confidently i
 
 
 - Start Git lesson Local 
+
+- 13:00 Presentation git-intro lessons theory
+- Give the git cheat sheets to the participants
+- prep screen output windows (Replica & tail)
+- start Local repositories lessons (Lesson_development/git_lesson_verbosed_structure)
+- +/- 14:45–15:00 break
+- Start 15:00–16:30 Tracking Changes & Commit History (Lesson_development/git_lesson_verbosed_structure)
+
 
 
