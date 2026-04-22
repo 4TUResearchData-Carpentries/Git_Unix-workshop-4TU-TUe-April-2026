@@ -37,7 +37,7 @@ For mirror a window using ([Ontopreplica](https://github.com/LorenzCK/OnTopRepli
 
 ### 🧊 Introduction \[10 min]
 
-* Start with [HackMD collaborative notes](https://edu.nl/xhydh) and icebreaker.
+* Start with [HackMD collaborative notes](https://hackmd.io/W5GSXeJ_RJOE0DE0UsW5AA) and icebreaker.
 * Transition to Git introduction with [slides](https://zenodo.org/records/19603828).
 
 
