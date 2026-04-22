@@ -39,7 +39,7 @@ For mirror a window using ([Ontopreplica](https://github.com/LorenzCK/OnTopRepli
 
 * Start with [HackMD collaborative notes](https://edu.nl/xhydh) and icebreaker.
 * Transition to Git introduction with [slides](https://zenodo.org/records/19603828).
-* Use [Mentimeter poll](https://www.menti.com/alx2mugaqr1n) in  presenter mode .
+
 
 ### 🔧 Step 1: Setting Up Git \[6 min]
 
