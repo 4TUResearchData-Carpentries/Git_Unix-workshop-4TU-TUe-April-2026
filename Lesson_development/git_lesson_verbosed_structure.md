@@ -43,7 +43,7 @@ For mirror a window using ([Ontopreplica](https://github.com/LorenzCK/OnTopRepli
 
 ### 🔧 Step 1: Setting Up Git \[6 min]
 
-> Instructor Note: Sometimes Git Bash won't open via shortcut. Direct students to `C:/Git/git-bash.exe` if needed.
+> Instructor Note: Sometimes Git Bash won't open via shortcut. Direct students to the correct location e.g. `C:/Git/git-bash.exe` if needed.
 
 Test installation:
 
