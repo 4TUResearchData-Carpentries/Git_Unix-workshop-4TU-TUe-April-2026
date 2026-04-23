@@ -573,6 +573,19 @@ git push origin <your-branch-name>
 
 > Instructor Note: Display this on a shared screen or slide.
 
+Find issue as person "in the wild"
+→ Fork 
+→ Clone 
+→ Create branch 
+→ Edit → add → commit (repeat) 
+→ Push to your fork 
+→ Open Pull Request
+
+Owner gets pull request
+Locally check (git fetch)
+
+
+
 **Assignment:**
 
 1. Write an Issue in your `patients-analysis` repo. Options:
