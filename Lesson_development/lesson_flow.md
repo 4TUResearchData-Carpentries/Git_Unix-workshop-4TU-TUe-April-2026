@@ -63,3 +63,17 @@ Say, we hope the lesson of today help you to know and use Git more confidently i
 
 
 
+Day II
+
+Day 2 – Git remotes and Get to know 4TU.ResearchData
+• 09:30 – Recap of local Git
+• 09:45 – Remotes in Git
+• 10:15 – Push/Pull to GitHub
+• 10:45 – Break
+• 11:00 – Collaboration practices
+• 12:00 – Lunch
+• 13:00 – Getting to know 4TU.ResearchData: The repository for the Natural Sciences and Engineering in NL.
+• 16:00- Post workshop survey
+• 16:30 – Wrap up and End
+
+
